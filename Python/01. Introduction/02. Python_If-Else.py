@@ -21,7 +21,7 @@ if __name__ == "__main__":
 =======
 """
 Problem: https://www.hackerrank.com/challenges/py-if-else/problem
-Max Score: 10
+Max Score: 10 
 Difficulty: Easy
 Author: Ric
 Date: Nov 11, 2019
