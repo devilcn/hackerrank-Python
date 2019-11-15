@@ -12,3 +12,5 @@ str_ori = input()
 order = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1357902468'
 sorted_Str = sorted(str_ori, key=order.index)
 print(*sorted_Str, sep='')
+
+# print(*sorted(input(), key=lambda k: (k.isdigit() - k.islower(), k in '02468', k)), sep='')
