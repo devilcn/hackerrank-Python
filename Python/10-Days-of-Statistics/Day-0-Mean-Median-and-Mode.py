@@ -15,13 +15,17 @@ def mean_cal(array_input,N):  # mean cal
     mean = output_custimization(sum_temp/N)
     return mean
     
-def median_cal(array_input,N):  # median cal
+def median_cal(array_input):  # median cal
     if len(array_input)%2 == 1:
-        result = output_custimization(array_input[len(array_input)//2 - 1])
+        if len(array_input) ==1:
+            result = array_input[0]
+        else:
+            result = array_input[len(array_input)//2]
     else:
         m,n = len(array_input) // 2 - 1, len(array_input) // 2
+        print(m,n)
         result = output_custimization((int(array_input[m]) + int(array_input[n])) / 2)
-    return result
+    return int(result)
 
 def mode_cal(array_input,N):  # mode cal
     result = max(array_input,key=array_input.count)
